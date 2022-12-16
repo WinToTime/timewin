@@ -4,13 +4,13 @@ import LatoBold from '../../assets/fonts/Lato-Bold.ttf';
 
 export const Link = styled(NavLink)`
   display: inline-block;
-  padding: 10px 10px;
+  padding: 8px 10px;
   margin-right: 30px;
 
   font-family: ${LatoBold};
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.25;
 
   color: #ffffff;
@@ -29,6 +29,15 @@ export const Link = styled(NavLink)`
     border-radius: 5px;
     color: #ff7c0a;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 22px;
+  }
 `;
 
 export const Wrapper = styled.nav`
@@ -37,11 +46,15 @@ export const Wrapper = styled.nav`
 
   display: flex;
   justify-content: center;
-  padding: 15px 30px;
+  padding: 10px 30px;
 
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #ff7c0a;
   box-shadow: 0px 2px 8px #ff7c0a;
   backdrop-filter: blur(11.25px);
   border-radius: 15px;
+
+  @media screen and (min-width: 768px) {
+    padding: 15px 30px;
+  }
 `;

@@ -1,4 +1,4 @@
-import Header from '../../components/Header';
+// import Header from '../../components/Header';
 import Container from '../../components/Container';
 import PlayList from '../../components/PlayList/PlayList';
 import Footer from '../../components/Footer';
@@ -8,7 +8,7 @@ import { PageTitle } from './SportPage.styled';
 const SportPage = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Container>
         <PageTitle>Ставки на спорт</PageTitle>
         <PlayList arreyList={SportList} />

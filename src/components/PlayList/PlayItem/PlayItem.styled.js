@@ -54,27 +54,6 @@ export const Logo = styled.img`
   }
 `;
 
-export const Rating = styled.span`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(245, 245, 245, 0.5);
-  border: 1px solid #ff7c0a;
-  border-radius: 15px 0px;
-  font-family: ${LatoBold};
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.1;
-  text-transform: capitalize;
-  color: #000000;
-`;
-
 export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     width: 200px;

@@ -1,13 +1,5 @@
-import {
-  Card,
-  Wrapper,
-  Logo,
-  Title,
-  Rating,
-  Description,
-  Link,
-  FeatureList,
-} from './PlayItemTop.styled';
+import Rating from '../Rating';
+import { Card, Wrapper, Logo, Title, Description, Link, FeatureList } from './PlayItemTop.styled';
 import Feature from '../Feature';
 
 const PlayItemTop = ({ playItemTop }) => {
@@ -17,7 +9,7 @@ const PlayItemTop = ({ playItemTop }) => {
       <Wrapper>
         <Logo src={logo} alt={title} />
         <Title>{title}</Title>
-        <Rating>{rating}/5</Rating>
+        <Rating rat={rating} />
         <Description>{description}</Description>
         <FeatureList>
           <Feature featureArray={feature} />

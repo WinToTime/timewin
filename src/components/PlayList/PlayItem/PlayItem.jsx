@@ -1,13 +1,5 @@
-import {
-  Card,
-  Logo,
-  Rating,
-  Wrapper,
-  Title,
-  Description,
-  Link,
-  FeatureList,
-} from './PlayItem.styled';
+import Rating from '../Rating';
+import { Card, Logo, Wrapper, Title, Description, Link, FeatureList } from './PlayItem.styled';
 import Feature from '../Feature';
 
 const PlayItem = ({ playItem }) => {
@@ -15,7 +7,7 @@ const PlayItem = ({ playItem }) => {
   return (
     <Card key={id}>
       <Logo src={logo} alt={title} />
-      <Rating>{rating}/5</Rating>
+      <Rating rat={rating} />
       <Wrapper>
         <Title>{title}</Title>
         <Description>{description}</Description>
