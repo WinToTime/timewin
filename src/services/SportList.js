@@ -1,7 +1,7 @@
 export const SportList = [
   {
     id: '1',
-    logo: require('../images/vavada.png'),
+    logo: require('../images/test-logo.png'),
     title: 'Sport 1',
     rating: 4.9,
     description: '100% или 100FS бонус на первый депозит!',
@@ -45,7 +45,7 @@ export const SportList = [
   },
   {
     id: '4',
-    logo: require('../images/vavada.png'),
+    logo: require('../images/test-logo.png'),
     title: 'Sport 4',
     rating: 4.4,
     description: '100% или 100FS бонус на первый депозит!',

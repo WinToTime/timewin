@@ -6,7 +6,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 165px 0;
+  padding: 130px 0;
+
   font-size: 128px;
   font-family: ${LatoRegular};
   text-transform: uppercase;

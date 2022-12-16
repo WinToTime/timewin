@@ -1,9 +1,9 @@
 export const GameList = [
   {
     id: '1',
-    logo: require('../images/vavada.png'),
-    title: 'Casino 1',
-    rating: 4.9,
+    logo: require('../images/logo/casino/vavada.png'),
+    title: 'Vavada',
+    rating: 5,
     description: '100% или 100FS бонус на первый депозит!',
     feature: [
       'официальная лицензия',
@@ -11,14 +11,14 @@ export const GameList = [
       'депозит от 50 гривен',
       'приветственный бонус на 5 депозитов',
     ],
-    link: '/',
+    link: 'https://partner-vavada.com/?promo=cd1b2825-b6da-41ed-ae77-3ea0d5d7ba0c&target=register',
   },
   {
     id: '2',
-    logo: require('../images/rox.png'),
-    title: 'Casino 2',
-    rating: 4,
-    description: '100% или 100FS бонус на первый депозит!',
+    logo: require('../images/logo/casino/starda.png'),
+    title: 'STARDA',
+    rating: 5,
+    description: '100% + ДО 500 ФРИСПИНОВ За 1-й депозит от 400 ₴',
     feature: [
       'официальная лицензия',
       'еженедельный кешбэк до 15%',
@@ -30,10 +30,10 @@ export const GameList = [
   },
   {
     id: '3',
-    logo: require('../images/test-logo.png'),
-    title: 'Casino 3',
-    rating: 4.8,
-    description: '100% или 100FS бонус на первый депозит!',
+    logo: require('../images/logo/casino/rox.png'),
+    title: 'ROX Casino',
+    rating: 4.9,
+    description: '150% на первый депозит',
     feature: [
       'официальная лицензия',
       'еженедельный кешбэк до 15%',
@@ -45,10 +45,10 @@ export const GameList = [
   },
   {
     id: '4',
-    logo: require('../images/vavada.png'),
-    title: 'Casino 4',
+    logo: require('../images/logo/casino/sol.png'),
+    title: 'SOL Casino',
     rating: 4.4,
-    description: '100% или 100FS бонус на первый депозит!',
+    description: '100% + ДО 500 ФРИСПИНОВ За 1-й депозит от 400 ₴',
     feature: [
       'официальная лицензия',
       'еженедельный кешбэк до 15%',
@@ -60,10 +60,10 @@ export const GameList = [
   },
   {
     id: '5',
-    logo: require('../images/test-logo.png'),
-    title: 'Casino 5',
+    logo: require('../images/logo/casino/volna.png'),
+    title: 'VOLNA Casino',
     rating: 4.5,
-    description: '100% или 100FS бонус на первый депозит!',
+    description: '100% + ДО 500 ФРИСПИНОВ За 1-й депозит от 400 ₴',
     feature: [
       'официальная лицензия',
       'еженедельный кешбэк до 15%',
@@ -75,10 +75,10 @@ export const GameList = [
   },
   {
     id: '6',
-    logo: require('../images/vavada.png'),
-    title: 'Casino 6',
+    logo: require('../images/logo/casino/izzi.png'),
+    title: 'IZZI',
     rating: 4.6,
-    description: '100% или 100FS бонус на первый депозит!',
+    description: '100% + ДО 500 ФРИСПИНОВ За 1-й депозит от 400 ₴',
     feature: [
       'официальная лицензия',
       'еженедельный кешбэк до 15%',
@@ -90,10 +90,25 @@ export const GameList = [
   },
   {
     id: '7',
-    logo: require('../images/test-logo.png'),
-    title: 'Casino 7',
+    logo: require('../images/logo/casino/legzo.png'),
+    title: 'LEGZO',
     rating: 4.7,
-    description: '100% или 100FS бонус на первый депозит!',
+    description: '100% + ДО 500 ФРИСПИНОВ За 1-й депозит от 400 ₴',
+    feature: [
+      'официальная лицензия',
+      'еженедельный кешбэк до 15%',
+      'вывод до 400 000 грн в месяц',
+      'депозит от 50 гривен',
+      'приветственный бонус на 5 депозитов',
+    ],
+    link: '/',
+  },
+  {
+    id: '8',
+    logo: require('../images/logo/casino/jet.png'),
+    title: 'Jet Casino',
+    rating: 4.7,
+    description: '100% + ДО 500 ФРИСПИНОВ За 1-й депозит от 400 ₴',
     feature: [
       'официальная лицензия',
       'еженедельный кешбэк до 15%',
