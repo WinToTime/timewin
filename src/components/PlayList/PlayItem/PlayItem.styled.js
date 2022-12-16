@@ -3,6 +3,7 @@ import LatoBold from '../../../assets/fonts/Lato-Bold.ttf';
 import LatoRegular from '../../../assets/fonts/Lato-Regular.ttf';
 
 export const Card = styled.li`
+  position: relative;
   padding: 15px;
   margin-bottom: 30px;
   background: rgba(255, 255, 255, 0.2);
