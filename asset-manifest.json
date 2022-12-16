@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/timewin/static/css/main.0efeef8d.css",
-    "main.js": "/timewin/static/js/main.a85779ba.js",
+    "main.js": "/timewin/static/js/main.95a64294.js",
     "static/media/header.jpg": "/timewin/static/media/header.fd1a2bcf098530889c8d.jpg",
     "static/media/Lato-Regular.ttf": "/timewin/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
     "static/media/Lato-Bold.ttf": "/timewin/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
     "static/media/vavada.png": "/timewin/static/media/vavada.239df2b338583dcd2676.png",
     "index.html": "/timewin/index.html",
     "main.0efeef8d.css.map": "/timewin/static/css/main.0efeef8d.css.map",
-    "main.a85779ba.js.map": "/timewin/static/js/main.a85779ba.js.map"
+    "main.95a64294.js.map": "/timewin/static/js/main.95a64294.js.map"
   },
   "entrypoints": [
     "static/css/main.0efeef8d.css",
-    "static/js/main.a85779ba.js"
+    "static/js/main.95a64294.js"
   ]
 }
