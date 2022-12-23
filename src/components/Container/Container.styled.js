@@ -16,6 +16,6 @@ export const ContainerWrap = styled.div`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 940px;
+    width: 1000px;
   }
 `;

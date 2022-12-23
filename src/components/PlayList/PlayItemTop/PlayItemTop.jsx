@@ -1,5 +1,13 @@
 import Rating from '../Rating';
-import { Card, Wrapper, Logo, Title, Description, Link, FeatureList } from './PlayItemTop.styled';
+import {
+  Card,
+  Wrapper,
+  LogoWrapper,
+  Logo,
+  Description,
+  Link,
+  FeatureList,
+} from './PlayItemTop.styled';
 import Feature from '../Feature';
 
 const PlayItemTop = ({ playItemTop }) => {
@@ -7,8 +15,9 @@ const PlayItemTop = ({ playItemTop }) => {
   return (
     <Card key={id}>
       <Wrapper>
-        <Logo src={logo} alt={title} />
-        <Title>{title}</Title>
+        <LogoWrapper>
+          <Logo src={logo} alt={title} width="300" height="150" />
+        </LogoWrapper>
         <Rating rat={rating} />
         <Description>{description}</Description>
         <FeatureList>

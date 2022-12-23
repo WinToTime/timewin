@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import HeaderIMG from '../../images/header.jpg';
 
 export const HeaderBg = styled.header`
+  position: relative;
   height: 540px;
   margin-left: auto;
   margin-right: auto;
@@ -9,4 +10,7 @@ export const HeaderBg = styled.header`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (max-width: 767px) {
+    height: 360px;
+  }
 `;

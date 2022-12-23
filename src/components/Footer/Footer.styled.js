@@ -1,18 +1,15 @@
 import styled from 'styled-components';
 import LatoRegular from '../../assets/fonts/Lato-Regular.ttf';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
   display: flex;
   flex-direction: column;
-
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    align-items: center;
-  }
+  align-items: center;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
   }
 `;
 
@@ -84,10 +81,6 @@ export const TelegramLink = styled.a`
 
   &:hover {
     background-color: #ff7c0a;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-bottom: 10px;
   }
 `;
 

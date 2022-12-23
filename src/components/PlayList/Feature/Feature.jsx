@@ -8,7 +8,9 @@ const Feature = ({ featureArray }) => {
         return (
           <FeatureItem key={index}>
             <ListWrapper>
-              <BsCheck2Circle size={22} style={{ marginRight: '10px' }} />
+              <span>
+                <BsCheck2Circle size={22} style={{ marginRight: '10px' }} />
+              </span>
               {item}
             </ListWrapper>
           </FeatureItem>

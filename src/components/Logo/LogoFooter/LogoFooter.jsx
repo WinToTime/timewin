@@ -1,11 +1,13 @@
-import { Wrapper, To } from './LogoFooter.styled';
+import { Wrapper, To, ExclamationMark } from './LogoFooter.styled';
 
 const LogoFooter = () => {
   return (
     <Wrapper>
       <span>Time</span>
       <To>To</To>
-      <span>Win!</span>
+      <span>
+        Win<ExclamationMark>!</ExclamationMark>
+      </span>
     </Wrapper>
   );
 };

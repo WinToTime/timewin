@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import LatoBold from '../../../assets/fonts/Lato-Bold.ttf';
-import LatoRegular from '../../../assets/fonts/Lato-Regular.ttf';
 
 export const Card = styled.li`
   position: relative;
+  width: 300px;
   padding: 15px;
   margin-bottom: 30px;
+  box-sizing: border-box;
+
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #ff7c0a;
   box-shadow: 0px 2px 8px #ff7c0a;
@@ -16,37 +18,33 @@ export const Card = styled.li`
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 320px) {
-    flex-direction: column;
-    width: 300px;
-    box-sizing: border-box;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     width: 100%;
   }
 `;
 
+export const LogoWrapper = styled.div`
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 150px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+  }
+`;
+
 export const Logo = styled.img`
   width: 300px;
-  margin-bottom: 10px;
 
   @media screen and (min-width: 768px) {
     padding: 25px 0;
-    width: 170px;
-    margin-right: 5px;
+    width: 150px;
     margin-bottom: 0;
   }
 
@@ -55,38 +53,9 @@ export const Logo = styled.img`
   }
 `;
 
-export const Wrapper = styled.div`
-  @media screen and (min-width: 768px) {
-    width: 200px;
-    height: 100%;
-    margin-right: 15px;
-  }
-`;
-
-export const Title = styled.p`
-  margin-bottom: 20px;
-  font-family: ${LatoRegular};
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.38;
-
-  text-align: center;
-  text-transform: capitalize;
-
-  color: #c2c2c2;
-
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 18px;
-  }
-`;
-
 export const Description = styled.p`
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
   font-family: ${LatoBold};
   font-style: normal;
   font-weight: 700;
@@ -98,18 +67,42 @@ export const Description = styled.p`
   color: #c2c2c2;
 
   @media screen and (min-width: 768px) {
+    width: 180px;
+    margin-right: 15px;
     margin-bottom: 0;
-    font-size: 16px;
+
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 18px;
+    width: 250px;
+    font-size: 20px;
+  }
+`;
+
+export const FeatureList = styled.ul`
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 200px;
+    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 300px;
   }
 `;
 
 export const Link = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  margin-left: auto;
+
   box-sizing: border-box;
-  padding: 43px 25px;
   background: #ff7c0a;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -125,36 +118,15 @@ export const Link = styled.a`
 
   color: #ffffff;
 
-  @media screen and (min-width: 320px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 35px;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 8px #ff7c0a;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
+    padding: 40px;
     width: 130px;
     height: 130px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 18px;
-  }
-`;
-
-export const FeatureList = styled.ul`
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 320px) {
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 260px;
-    margin-right: 15px;
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 1200px) {
   }
 `;

@@ -2,17 +2,19 @@ import Container from '../../components/Container';
 import PlayList from '../../components/PlayList/PlayList';
 import Footer from '../../components/Footer';
 import { SportList } from '../../services/SportList';
-import { PageTitle } from './SportPage.styled';
+import PageTitle from '../../components/PageTitle/PageTitle';
 
 const SportPage = () => {
   return (
-    <>
-      <Container>
-        <PageTitle>Ставки на спорт</PageTitle>
-        <PlayList arreyList={SportList} />
-        <Footer />
-      </Container>
-    </>
+    <Container>
+      <main>
+        <section>
+          <PageTitle title="Топ ставки на спорт" />
+          <PlayList arreyList={SportList} />
+          <Footer />
+        </section>
+      </main>
+    </Container>
   );
 };
 

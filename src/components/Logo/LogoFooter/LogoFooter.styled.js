@@ -18,3 +18,7 @@ export const To = styled.span`
   color: #ff7c0a;
   z-index: 1;
 `;
+
+export const ExclamationMark = styled.span`
+  color: #ff7c0a;
+`;
