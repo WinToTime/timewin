@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import LatoRegular from '../../../assets/fonts/Lato-Regular.ttf';
+// import LatoRegular from '../../../assets/fonts/Lato-Regular.ttf';
 
 export const FeatureItem = styled.li`
   margin-bottom: 5px;
 
-  font-family: ${LatoRegular};
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

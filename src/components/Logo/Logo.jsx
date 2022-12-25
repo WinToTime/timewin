@@ -3,11 +3,11 @@ import { Wrapper, Time, To, Win, ExclamationMark } from './Logo.styled';
 const Logo = () => {
   return (
     <Wrapper>
-      <Time>Time</Time>
+      <Win>Win</Win>
       <To>To</To>
-      <Win>
-        Win<ExclamationMark>!</ExclamationMark>
-      </Win>
+      <Time>
+        Time<ExclamationMark>!</ExclamationMark>
+      </Time>
     </Wrapper>
   );
 };

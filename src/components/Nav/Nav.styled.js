@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import LatoBold from '../../assets/fonts/Lato-Bold.ttf';
+// import LatoBold from '../../assets/fonts/Lato-Bold.ttf';
 
 export const Wrapper = styled.nav`
   display: flex;
@@ -23,7 +23,6 @@ export const Link = styled(NavLink)`
   padding: 8px 10px;
   margin-right: 30px;
 
-  font-family: ${LatoBold};
   font-style: normal;
   font-weight: 700;
   font-size: 18px;

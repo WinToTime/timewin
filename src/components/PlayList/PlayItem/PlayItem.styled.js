@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import LatoBold from '../../../assets/fonts/Lato-Bold.ttf';
 
 export const Card = styled.li`
   position: relative;
@@ -56,7 +55,6 @@ export const Logo = styled.img`
 export const Description = styled.p`
   margin-bottom: 20px;
 
-  font-family: ${LatoBold};
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -107,7 +105,6 @@ export const Link = styled.a`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
 
-  font-family: ${LatoBold};
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

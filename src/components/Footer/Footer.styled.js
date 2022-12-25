@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import LatoRegular from '../../assets/fonts/Lato-Regular.ttf';
 
 export const Wrapper = styled.footer`
   display: flex;
@@ -34,9 +33,7 @@ export const TextWrapper = styled.div`
 export const Text = styled.p`
   margin-bottom: 10px;
 
-  font-family: ${LatoRegular};
   font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1;
 
@@ -59,9 +56,7 @@ export const RightWrapper = styled.div`
 
 export const Telegram = styled.p`
   margin-bottom: 5px;
-  font-family: ${LatoRegular};
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.38;
 

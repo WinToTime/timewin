@@ -1,5 +1,23 @@
+import { FormattedMessage } from 'react-intl';
+
+import Container from '../../components/Container';
+import Footer from '../../components/Footer';
+
+import { Title } from './NotFoundPage.styled';
+
 const NotFoundPage = () => {
-  return <h1>NotFoundPage</h1>;
+  return (
+    <Container>
+      <main>
+        <section>
+          <Title>
+            <FormattedMessage id="page_not_found" />
+          </Title>
+        </section>
+      </main>
+      <Footer />
+    </Container>
+  );
 };
 
 export default NotFoundPage;

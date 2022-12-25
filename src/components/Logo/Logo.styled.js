@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import LatoRegular from '../../assets/fonts/Lato-Regular.ttf';
 
 export const Wrapper = styled.div`
   position: absolute;
@@ -11,33 +10,23 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
+  cursor: default;
+`;
 
-  font-size: 90px;
-  font-family: ${LatoRegular};
+export const Win = styled.span`
+  opacity: 0;
+  animation: showOpacity 0.4s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+
+  font-size: 120px;
+  font-family: 'EB Garamond', serif;
   text-transform: uppercase;
   line-height: 0.55;
 
   @media screen and (min-width: 768px) {
-    font-size: 128px;
+    font-size: 160px;
   }
-`;
-
-// export const LogoFont = styled.span`
-//   font-size: 90px;
-//   font-family: ${LatoRegular};
-//   text-transform: uppercase;
-//   line-height: 0.55;
-
-//   @media screen and (min-width: 768px) {
-//     font-size: 128px;
-//   }
-// `;
-
-export const Time = styled.span`
-  animation: showOpacity 0.4s;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-  opacity: 0;
 
   @keyframes showOpacity {
     0% {
@@ -54,10 +43,18 @@ export const To = styled.span`
   color: #ff7c0a;
   z-index: 1;
   opacity: 0;
+  font-size: 100px;
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  line-height: 0.55;
 
   animation: showOpacity 0.4s;
   animation-fill-mode: forwards;
   animation-delay: 0.8s;
+
+  @media screen and (min-width: 768px) {
+    font-size: 120px;
+  }
 
   @keyframes showOpacity {
     0% {
@@ -70,11 +67,20 @@ export const To = styled.span`
   }
 `;
 
-export const Win = styled.span`
+export const Time = styled.span`
+  opacity: 0;
   animation: showOpacity 0.4s;
   animation-fill-mode: forwards;
   animation-delay: 0.4s;
-  opacity: 0;
+
+  font-size: 80px;
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  line-height: 0.55;
+
+  @media screen and (min-width: 768px) {
+    font-size: 100px;
+  }
 
   @keyframes showOpacity {
     0% {

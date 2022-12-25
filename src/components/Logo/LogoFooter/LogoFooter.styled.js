@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import LatoRegular from '../../../assets/fonts/Lato-Regular.ttf';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -8,8 +7,7 @@ export const Wrapper = styled.div`
   justify-content: center;
 
   font-size: 48px;
-  font-family: ${LatoRegular};
-  font-weight: 400;
+  font-family: 'EB Garamond', serif;
   text-transform: uppercase;
   line-height: 0.55;
 `;

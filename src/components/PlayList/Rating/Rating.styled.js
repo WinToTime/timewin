@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import LatoBold from '../../../assets/fonts/Lato-Bold.ttf';
 
 export const RatContainer = styled.div`
   position: absolute;
@@ -22,7 +21,6 @@ export const RatContainer = styled.div`
 `;
 
 export const RatingStyle = styled.span`
-  font-family: ${LatoBold};
   font-style: normal;
   font-weight: 700;
   font-size: 18px;

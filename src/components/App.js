@@ -33,8 +33,8 @@ function App() {
           path="/"
           element={<SharedLayout currentLocale={currentLocale} handleChange={handleChange} />}
         >
-          <Route index element={<HomePage />} />
-          <Route path="sport" element={<SportPage />} />
+          <Route index element={<HomePage local={currentLocale} />} />
+          <Route path="sport" element={<SportPage local={currentLocale} />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
