@@ -1,3 +1,5 @@
+import { FormattedMessage } from 'react-intl';
+
 import LogoFooter from '../Logo/LogoFooter';
 import BeGambleAware from '../../images/begambleaware.png';
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -20,21 +22,16 @@ const Footer = () => {
       </LogoWrapper>
       <TextWrapper>
         <Text>
-          Информационный ресурс Time to win не проводит игры на реальные и/или виртуальные деньги,
-          также сайт не принимает ни в какой форме оплату ставок и/иных платежей, которые
-          связаны/могут быть связаны с азартными играми, букмекерами или тотализаторами. Любые
-          материалы на информационном ресурсе Time to win публикуются исключительно в информационных
-          целях. Участие в азартных играх может вызвать игровую зависимость. Соблюдайте правила
-          (принципы) ответственной игры. При появлении первых признаков зависимости незамедлительно
-          обратитесь к специалисту. Помните, что участие в азартных играх не может быть источником
-          доходов или альтернативой работе.
+          <FormattedMessage id="footer_text" />
         </Text>
         <a href="https://www.begambleaware.org/" target="_blank" rel="noreferrer">
           <BeGamble src={BeGambleAware} alt="BeGambleAware" />
         </a>
       </TextWrapper>
       <RightWrapper>
-        <Telegram>Наш Телеграм</Telegram>
+        <Telegram>
+          <FormattedMessage id="telegram_title" />
+        </Telegram>
         <TelegramLink href="/" target="_blank" rel="noreferrer">
           <FaTelegramPlane size={25} style={{ fill: '#ffffff' }} />
         </TelegramLink>

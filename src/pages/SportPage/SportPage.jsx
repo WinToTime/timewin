@@ -1,15 +1,20 @@
+import { FormattedMessage } from 'react-intl';
+
 import Container from '../../components/Container';
 import PlayList from '../../components/PlayList/PlayList';
 import Footer from '../../components/Footer';
 import { SportList } from '../../services/SportList';
-import PageTitle from '../../components/PageTitle/PageTitle';
+
+import { Title } from './SportPage.styled';
 
 const SportPage = () => {
   return (
     <Container>
       <main>
         <section>
-          <PageTitle title="Топ ставки на спорт" />
+          <Title>
+            <FormattedMessage id="title_sport" />
+          </Title>
           <PlayList arreyList={SportList} />
           <Footer />
         </section>

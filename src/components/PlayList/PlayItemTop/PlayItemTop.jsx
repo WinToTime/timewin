@@ -1,3 +1,5 @@
+import { FormattedMessage } from 'react-intl';
+
 import Rating from '../Rating';
 import {
   Card,
@@ -25,7 +27,7 @@ const PlayItemTop = ({ playItemTop }) => {
         </FeatureList>
       </Wrapper>
       <Link href={link} target="_blank" rel="noreferrer">
-        Забрать бонус
+        <FormattedMessage id="link_bonus" />
       </Link>
     </Card>
   );
