@@ -11,7 +11,7 @@ const NotFoundPage = () => {
       <main>
         <section>
           <Title>
-            <FormattedMessage id="page_not_found" />
+            <FormattedMessage id="page_not_found" defaultMessage="Сторінку не знайдено" />
           </Title>
         </section>
       </main>

@@ -18,7 +18,7 @@ const PlayItemTop = ({ playItemTop }) => {
     <Card key={id}>
       <Wrapper>
         <LogoWrapper>
-          <Logo src={logo} alt={title} width="300" height="150" />
+          <Logo src={logo} alt={title} loading="lazy" width="300" height="150" />
         </LogoWrapper>
         <Rating rat={rating} />
         <Description>{description}</Description>
@@ -26,8 +26,13 @@ const PlayItemTop = ({ playItemTop }) => {
           <Feature featureArray={feature} />
         </FeatureList>
       </Wrapper>
-      <Link href={link} target="_blank" rel="noreferrer">
-        <FormattedMessage id="link_bonus" />
+      <Link
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={<FormattedMessage id="link_bonus" defaultMessage="Забрати бонус" />}
+      >
+        <FormattedMessage id="link_bonus" defaultMessage="Забрати бонус" />
       </Link>
     </Card>
   );

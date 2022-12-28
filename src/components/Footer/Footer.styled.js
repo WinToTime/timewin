@@ -69,17 +69,19 @@ export const TelegramLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #229ed9;
-  border-radius: 50%;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
 
-  &:hover {
-    background-color: #ff7c0a;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
   }
 `;
 
 export const BeGamble = styled.img`
   margin: 0 auto;
   width: 150px;
+  height: auto;
 `;

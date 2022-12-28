@@ -23,13 +23,13 @@ export const RatContainer = styled.div`
 export const RatingStyle = styled.span`
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.1;
 
   text-transform: capitalize;
   color: #000000;
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
+    font-size: 16px;
   }
 `;

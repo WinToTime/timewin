@@ -115,6 +115,10 @@ export const Link = styled.a`
 
   color: #ffffff;
 
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
+
   &:hover,
   &:focus {
     box-shadow: 0 0 8px #ff7c0a;

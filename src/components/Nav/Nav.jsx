@@ -8,10 +8,14 @@ const Nav = () => {
     <Container>
       <Wrapper>
         <Link to="/">
-          <FormattedMessage id="nav_casino" />
+          <span>
+            <FormattedMessage id="nav_casino" defaultMessage="Казино" />
+          </span>
         </Link>
         <Link to="/sport">
-          <FormattedMessage id="nav_sport" />
+          <span>
+            <FormattedMessage id="nav_sport" defaultMessage="Спорт" />
+          </span>
         </Link>
       </Wrapper>
     </Container>

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import LatoRegular from '../../../assets/fonts/Lato-Regular.ttf';
 
 export const FeatureItem = styled.li`
   margin-bottom: 5px;
@@ -16,11 +15,19 @@ export const FeatureItem = styled.li`
   }
 
   @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
 `;
 
 export const ListWrapper = styled.div`
   display: flex;
-  align-items: center;
+`;
+
+export const Svg = styled.svg`
+  margin-right: 10px;
+  fill: #c2c2c2;
 `;

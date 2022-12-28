@@ -1,5 +1,5 @@
-import { BsCheck2Circle } from 'react-icons/bs';
-import { FeatureItem, ListWrapper } from './Feature.styled';
+import { FeatureItem, ListWrapper, Svg } from './Feature.styled';
+import sprite from '../../../images/sprite.svg';
 
 const Feature = ({ featureArray }) => {
   return (
@@ -8,9 +8,11 @@ const Feature = ({ featureArray }) => {
         return (
           <FeatureItem key={index}>
             <ListWrapper>
-              <span>
-                <BsCheck2Circle size={22} style={{ marginRight: '10px' }} />
-              </span>
+              <div>
+                <Svg width="20" height="20">
+                  <use href={sprite + '#icon-check'} />
+                </Svg>
+              </div>
               {item}
             </ListWrapper>
           </FeatureItem>

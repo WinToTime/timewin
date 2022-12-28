@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-// import LatoBold from '../../assets/fonts/Lato-Bold.ttf';
 
 export const Wrapper = styled.nav`
   display: flex;
@@ -22,6 +21,7 @@ export const Wrapper = styled.nav`
 export const Link = styled(NavLink)`
   padding: 8px 10px;
   margin-right: 30px;
+  border-radius: 5px;
 
   font-style: normal;
   font-weight: 700;
@@ -29,6 +29,10 @@ export const Link = styled(NavLink)`
   line-height: 1.25;
 
   color: #ffffff;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
 
   &:last-child {
     margin-right: 0;

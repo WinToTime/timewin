@@ -71,6 +71,7 @@ export const Link = styled.a`
   justify-content: center;
   padding: 14px;
 
+  box-sizing: border-box;
   background: #ff7c0a;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -84,6 +85,10 @@ export const Link = styled.a`
   text-transform: uppercase;
 
   color: #ffffff;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
 
   &:hover,
   &:focus {

@@ -1,13 +1,15 @@
+import { lazy } from 'react';
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
 import SharedLayout from './SharedLayout';
-import HomePage from '../pages/HomePage';
-import SportPage from '../pages/SportPage';
-import NotFoundPage from '../pages/NotFoundPage';
 
 import { LOCALES } from '../i18n/locales';
 import { messages } from '../i18n/messages';
+
+const HomePage = lazy(() => import('../pages/HomePage'));
+const SportPage = lazy(() => import('../pages/SportPage'));
+const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
 
 function App() {
   const [currentLocale, setCurrentLocale] = useState(getInitialLocale());
