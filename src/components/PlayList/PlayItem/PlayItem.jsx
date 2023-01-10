@@ -1,21 +1,31 @@
 import { FormattedMessage } from 'react-intl';
 
 import Rating from '../Rating';
-import { Card, LogoWrapper, Logo, Description, Link, FeatureList } from './PlayItem.styled';
+import {
+  Card,
+  CardLink,
+  LogoWrapper,
+  Logo,
+  Description,
+  Link,
+  FeatureList,
+} from './PlayItem.styled';
 import Feature from '../Feature';
 
 const PlayItem = ({ playItem }) => {
   const { id, logo, title, rating, description, feature, link } = playItem;
   return (
     <Card key={id}>
-      <LogoWrapper>
-        <Logo src={logo} alt={title} loading="lazy" width="300" height="150" />
-      </LogoWrapper>
-      <Rating rat={rating} />
-      <Description>{description}</Description>
-      <FeatureList>
-        <Feature featureArray={feature} />
-      </FeatureList>
+      <CardLink href={link} target="_blank" rel="noreferrer">
+        <LogoWrapper>
+          <Logo src={logo} alt={title} loading="lazy" width="300" height="150" />
+        </LogoWrapper>
+        <Rating rat={rating} />
+        <Description>{description}</Description>
+        <FeatureList>
+          <Feature featureArray={feature} />
+        </FeatureList>
+      </CardLink>
       <Link
         href={link}
         target="_blank"

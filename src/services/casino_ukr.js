@@ -142,6 +142,6 @@ export const casino_ukr = [
       'Ліцензоване казино',
       'Швидкі виплати',
     ],
-    link: '/',
+    link: 'https://comboslots.org/a9d9e8770',
   },
 ];

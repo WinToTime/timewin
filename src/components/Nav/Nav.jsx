@@ -17,6 +17,11 @@ const Nav = () => {
             <FormattedMessage id="nav_sport" defaultMessage="Спорт" />
           </span>
         </Link>
+        <Link to="/faq">
+          <span>
+            <FormattedMessage id="nav_faq" defaultMessage="F.A.Q." />
+          </span>
+        </Link>
       </Wrapper>
     </Container>
   );

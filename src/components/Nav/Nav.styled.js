@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 export const Wrapper = styled.nav`
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 6px 30px;
   margin-bottom: 20px;
 
@@ -19,15 +20,16 @@ export const Wrapper = styled.nav`
 `;
 
 export const Link = styled(NavLink)`
-  padding: 8px 10px;
-  margin-right: 30px;
-  border-radius: 5px;
+  margin-right: 20px;
+  min-width: 80px;
+  width: 150px;
 
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.25;
+  font-size: 16px;
+  line-height: 1.2;
 
+  text-align: center;
   color: #ffffff;
 
   transition-property: background-color, color;
@@ -44,17 +46,14 @@ export const Link = styled(NavLink)`
 
   &:hover:not(.active),
   &:focus:not(.active) {
-    background-color: #ffffff;
-    border-radius: 5px;
     color: #ff7c0a;
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 20px;
-    padding: 10px 10px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 `;

@@ -10,6 +10,7 @@ import { messages } from '../i18n/messages';
 const HomePage = lazy(() => import('../pages/HomePage'));
 const SportPage = lazy(() => import('../pages/SportPage'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage'));
+const FaqPage = lazy(() => import('../pages/FaqPage'));
 
 function App() {
   const [currentLocale, setCurrentLocale] = useState(getInitialLocale());
@@ -37,6 +38,7 @@ function App() {
         >
           <Route index element={<HomePage local={currentLocale} />} />
           <Route path="sport" element={<SportPage local={currentLocale} />} />
+          <Route path="faq" element={<FaqPage local={currentLocale} />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

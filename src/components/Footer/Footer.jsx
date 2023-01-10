@@ -9,8 +9,10 @@ import {
   TextWrapper,
   Text,
   RightWrapper,
-  Telegram,
-  TelegramLink,
+  ContactTitle,
+  ContactList,
+  ContactItem,
+  ContactSvg,
   BeGamble,
 } from './Footer.styled';
 
@@ -36,20 +38,63 @@ const Footer = () => {
           <BeGamble src={BeGambleAware} alt="BeGambleAware" width="150" height="50" />
         </a>
       </TextWrapper>
-      <RightWrapper data-nosnippet>
-        <Telegram>
-          <FormattedMessage id="telegram_title" defaultMessage="Наш Телеграм" />
-        </Telegram>
-        <TelegramLink
-          href="https://t.me/wintotime"
-          target="_blank"
-          rel="noreferrer"
-          aria-label={<FormattedMessage id="telegram_title" defaultMessage="Наш Телеграм" />}
-        >
-          <svg width="40" height="40">
-            <use href={sprite + '#icon-telegram'} />
-          </svg>
-        </TelegramLink>
+      <RightWrapper>
+        <address>
+          <ContactTitle>
+            <FormattedMessage id="contacts" defaultMessage="Наші контакти:" />
+          </ContactTitle>
+
+          <ContactList>
+            <ContactItem>
+              <a
+                href="https://t.me/wintotime"
+                target="_blank"
+                rel="noreferrer"
+                aria-label={<FormattedMessage id="telegram_title" defaultMessage="Наш Телеграм" />}
+              >
+                <ContactSvg width="40" height="40">
+                  <use href={sprite + '#icon-telegram'} />
+                </ContactSvg>
+              </a>
+            </ContactItem>
+            <ContactItem>
+              <a
+                href="mailto:support@wintotime.com"
+                aria-label={<FormattedMessage id="mail_title" defaultMessage="Наша пошта" />}
+              >
+                <ContactSvg width="40" height="40">
+                  <use href={sprite + '#icon-mail'} />
+                </ContactSvg>
+              </a>
+            </ContactItem>
+            <ContactItem>
+              <a
+                href="https://www.facebook.com/wintotimecom"
+                target="_blank"
+                rel="noreferrer"
+                aria-label={<FormattedMessage id="facebook_title" defaultMessage="Наш Facebook" />}
+              >
+                <ContactSvg width="40" height="40">
+                  <use href={sprite + '#icon-facebook'} />
+                </ContactSvg>
+              </a>
+            </ContactItem>
+            <ContactItem>
+              <a
+                href="https://www.instagram.com/wintotime/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label={
+                  <FormattedMessage id="instagram_title" defaultMessage="Наш Instagram" />
+                }
+              >
+                <ContactSvg width="40" height="40">
+                  <use href={sprite + '#icon-instagram'} />
+                </ContactSvg>
+              </a>
+            </ContactItem>
+          </ContactList>
+        </address>
       </RightWrapper>
     </Wrapper>
   );

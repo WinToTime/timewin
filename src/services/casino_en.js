@@ -142,6 +142,6 @@ export const casino_en = [
       'Licensed Casino',
       'Fast payouts',
     ],
-    link: '/',
+    link: 'https://comboslots.org/a9d9e8770',
   },
 ];

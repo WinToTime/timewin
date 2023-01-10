@@ -147,6 +147,6 @@ export const casino_ru = [
       'Лицензированное казино',
       'Быстрые выплаты',
     ],
-    link: '/',
+    link: 'https://comboslots.org/a9d9e8770',
   },
 ];

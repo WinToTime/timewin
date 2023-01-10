@@ -1,4 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+Host: https://wintotime.com
+
 Sitemap: https://wintotime.com/sitemap.xml

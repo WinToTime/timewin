@@ -17,14 +17,16 @@ const PlayItemTop = ({ playItemTop }) => {
   return (
     <Card key={id}>
       <Wrapper>
-        <LogoWrapper>
-          <Logo src={logo} alt={title} loading="lazy" width="300" height="150" />
-        </LogoWrapper>
-        <Rating rat={rating} />
-        <Description>{description}</Description>
-        <FeatureList>
-          <Feature featureArray={feature} />
-        </FeatureList>
+        <a href={link} target="_blank" rel="noreferrer">
+          <LogoWrapper>
+            <Logo src={logo} alt={title} loading="lazy" width="300" height="150" />
+          </LogoWrapper>
+          <Rating rat={rating} />
+          <Description>{description}</Description>
+          <FeatureList>
+            <Feature featureArray={feature} />
+          </FeatureList>
+        </a>
       </Wrapper>
       <Link
         href={link}

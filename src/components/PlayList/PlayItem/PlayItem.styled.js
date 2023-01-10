@@ -25,6 +25,16 @@ export const Card = styled.li`
   }
 `;
 
+export const CardLink = styled.a`
+  width: 300px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+`;
+
 export const LogoWrapper = styled.div`
   @media screen and (max-width: 767px) {
     display: flex;

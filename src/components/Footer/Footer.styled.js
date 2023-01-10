@@ -51,10 +51,10 @@ export const RightWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
+  width: 180px;
 `;
 
-export const Telegram = styled.p`
+export const ContactTitle = styled.p`
   margin-bottom: 5px;
   font-style: normal;
   font-size: 16px;
@@ -65,10 +65,22 @@ export const Telegram = styled.p`
   color: #c2c2c2;
 `;
 
-export const TelegramLink = styled.a`
+export const ContactList = styled.ul`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 5px;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 40px);
+    grid-template-rows: repeat(2, 40px);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+`;
+
+export const ContactItem = styled.li`
+  margin-right: 10px;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 250ms;
@@ -77,6 +89,21 @@ export const TelegramLink = styled.a`
   &:hover,
   &:focus {
     transform: scale(1.1);
+  }
+`;
+
+export const ContactSvg = styled.svg`
+  width: 40px;
+  height: 40px;
+  fill: #40b3e0;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
+
+  &:hover,
+  &:focus {
+    fill: #ff7c0a;
   }
 `;
 
